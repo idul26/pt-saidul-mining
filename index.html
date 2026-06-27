@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PT Saidul Mining</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+
+    background-image:url("tambang.jpg");
+    background-size:cover;
+    background-position:center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:55px;
+    letter-spacing:2px;
+    text-shadow:3px 3px 10px black;
+}
+
+header p{
+    font-size:20px;
+}
+
+section{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    color:#0b6e4f;
+}
+
+button{
+    background:#0b6e4f;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition: 0.3s
+}
+
+button:hover{
+    background:#09553d;
+    transform:scale(1.05);
+    transition:0.3s;
+}
+section{
+    animation: muncul 1s ease;
+}
+
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+@media screen and (max-width:768px){
+
+header{
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:30px;
+}
+
+header p{
+    font-size:16px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+section{
+    margin:15px;
+    padding:20px;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+button{
+    width:100%;
+}
+
+}
+nav{
+    margin-top:20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background:rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 8px;
+    font-size:16px;
+    font-weight:bold;
+    display:inline-block;
+    padding:10px 15px;
+    transition:0.3s;
+    border-radius:5px;
+}
+
+nav a:hover{
+    color:orange;
+    background: rgba(255, 255, 255, 0.15);
+}
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+img{
+    border-radius:10px;
+    transition:0.3s;
+    margin:10px;
+}
+
+img:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.layanan{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: stretch;
+}
+
+.card{
+    width:180px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#0b6e4f;
+}
+
+.wa-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.wa-float:hover{
+    background:#1ebe5d;
+    transform:scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="logo PT Saidul Mining" width="150"> 
+<h1>PT SAIDUL MINING</h1>
+<p>Solusi Pertambangan Modern Indonesia</p>
+
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#tentang">Profil</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+</header>
+
+
+<section id="profil">
+<h2> Tentang Kami</h2>
+
+<p>
+PT Saidul Mining merupakan perusahaan yang bergerak di bidang pertambangan
+dan jasa pertambangan di Indonesia. Kami berkomitmen memberikan layanan
+profesional mulai dari eksplorasi, perencanaan tambang, operasi penambangan,
+hingga reklamasi lahan pascatambang.
+</p>
+
+<a href="#profil">
+    <button>Pelajari Lebih Lanjut</button>
+</a>
+
+</section>
+<section id="layanan">
+
+<h2>Layanan Kami</h2>
+
+<div class="layanan">
+
+    <div class="card">
+        <h3>⛏ Eksplorasi</h3>
+        <p>Survey dan eksplorasi sumber daya tambang.</p>
+    </div>
+
+    <div class="card">
+        <h3>🚜 Operasi Tambang</h3>
+        <p>Jasa penambangan yang profesional.</p>
+    </div>
+
+    <div class="card">
+        <h3>📋 Perencanaan</h3>
+        <p>Perencanaan tambang yang efisien.</p>
+    </div>
+
+    <div class="card">
+        <h3>🌱 Reklamasi</h3>
+        <p>Pemulihan lahan pascatambang.</p>
+    </div>
+
+</div>
+
+</section>
+<section id="galeri">
+
+<h2>Galeri Proyek</h2>
+
+<img src="tambang.jpg" width="300">
+<img src="tambang.jpg" width="300">
+<img src="tambang.jpg" width="300">
+
+</section>
+<section id="kontak">
+
+<h2>Kontak Kami</h2>
+
+<p>📍 Alamat: Makassar, Sulawesi Selatan</p>
+
+<p>📞 Telepon: 0812-3456-7890</p>
+
+<p>✉️ Email: info@ptsaidulmining.com</p>
+
+<p>🌐 Website: www.ptsaidulmining.com</p>
+<p>
+<a href="https://wa.me/6281234567890">
+<button>Hubungi Kami via WhatsApp</button>
+</a>
+</p>
+
+</section>
+<footer>
+    <h3>PT SAIDUL MINING</h3>
+    <p>Membangun Masa Depan Pertambangan Indonesia</p>
+    <p>© 2026 PT Saidul Mining. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/6281234567890" class="wa-float" target="_blank">
+    💬 WhatsApp
+</a>
+</body>
+</html>
